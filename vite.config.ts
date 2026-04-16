@@ -3,8 +3,9 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  base: '/sunshine-flowers/',
   build: {
     outDir: 'docs',
-    emptyOutDir: true, // Also ensure the directory is emptied before build
+    emptyOutDir: true,
   },
 });
